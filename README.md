@@ -1,21 +1,21 @@
-## Example on how to use Prometheus and Grafana to monitor a Flask API application
+# Example on how to use Prometheus and Grafana to monitor a Flask API Machine Learning Model application 
 
-Example deployment of a Flask API using Prometheus and Grafana for metrics and monitoring. All tied together using docker-compose.
+Example deployment of a Machine Learning Model Flask API with Gunicorn(WSGI) using Prometheus and Grafana for metrics and model monitoring. All tied together using docker-compose.
 
-### Install dependencies
+## Requirements
+- docker compose
 
-```
-pip install -r api/requirements.txt
-```
-
-### Set up and run everything using docker-compose
+## Set up and run everything using docker-compose
 
 ```
-docker-compose up
+docker compose up
 ```
 
-### Access
-
-* API: http://localhost:5000/flask-prometheus-grafana-example/
+## Access
+* API: http://localhost:5000/
 * Prometheus: http://localhost:9090/
-* Grafana: http://localhost:3000 `[username: admin, password: pass@123]`
+* Grafana: http://localhost:3000 `[username: admin, password: admin]`
+
+
+## Reference
+https://github.com/jonashaag/prometheus-multiprocessing-example
