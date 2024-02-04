@@ -1,5 +1,5 @@
 import logging
-from flask import Flask
+from flask import Flask, Response
 from flask import jsonify
 from prometheus_flask_exporter import PrometheusMetrics
 from prometheus_client import Counter, make_asgi_app, multiprocess, generate_latest, CollectorRegistry, CONTENT_TYPE_LATEST, Summary
