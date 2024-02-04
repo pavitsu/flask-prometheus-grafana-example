@@ -28,7 +28,7 @@ s = Summary('summary_model_predict_probability', 'Probability of Model (Summary)
 from markupsafe import escape 
 
 @api.route("/metrics")
-def metrics():
+def metrics_page():
     registry = CollectorRegistry()
     multiprocess.MultiProcessCollector(registry)
     data = generate_latest(registry)
